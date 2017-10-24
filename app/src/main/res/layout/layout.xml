@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3">
+        <TableRow>
+            <!-- 为该表格行添加三个按钮 -->
+            <Button android:id="@+id/set"
+                android:text="自定义"
+                android:onClick="setcustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Mytime"
+                android:layout_width="wrap_content"
+                android:textSize="65px"
+                android:layout_height="wrap_content" />
+            <Button android:id="@+id/mute"
+                android:text="mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:id="@+id/record"
+                android:text="Record"
+                android:onClick="query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+    </TableLayout>
+
+    <com.woc.mine.MainView android:id="@+id/MyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
